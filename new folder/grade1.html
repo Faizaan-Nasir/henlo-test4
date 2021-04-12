@@ -1,0 +1,15 @@
+<html><script src="new.js">
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    window.location.href = "file:///C:/Users/Asus/Desktop/new%20folder/blank1.html";
+  } else {
+     user = prompt("Please enter your description:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+</html>
